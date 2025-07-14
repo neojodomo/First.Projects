@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgb(165, 84, 161), rgb(54, 79, 199));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-container {
+      background-color: rgb(17, 17, 17);
+      padding: 2.5rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      width: 320px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-bottom: 2rem;
+      font-size: 28px;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 1rem;
+      border: 2px solid rgb(155, 94, 255);
+      background-color: transparent;
+      border-radius: 8px;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .form-container input::placeholder {
+      color: rgb(187, 187, 187);
+    }
+
+    .form-container .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+      background-color: rgb(114, 9, 183);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .form-container .btn:hover {
+      background-color: rgb(90, 24, 154);
+    }
+
+    .form-container .link-btn {
+      background-color: rgb(90, 24, 110);
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 25px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      transition:  0.3s ease;
+    }
+
+    .form-container .link-btn:hover {
+      background-color: rgb(54, 79, 199);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="E-mail" required />
+      <input type="tel" placeholder="Phone" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button class="btn" type="submit">Register</button>
+      <a href="#" class="link-btn">Have account? Sign In</a>
+    </form>
+  </div>
+
+</body>
+</html>
